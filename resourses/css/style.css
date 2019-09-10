@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------- reusable ------------*/
+body {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    display: inline;
+}
+li {
+    display: inline-block;
+}
+h2 {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 200%;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    text-transform: uppercase;
+}
+h2::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 10%;
+    background-color: #e67e22;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+/* --------------------------------
+---------- Header -----------------
+-----------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url('../images/hero.jpg'); 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0px;
+    background-attachment: fixed;
+}
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-text {
+    font-size: 240%;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+a.btn:link, a.btn:visited {
+    padding: 10px 20px;
+    font-family: 'Lato';
+    font-weight: 300;
+    border: 1px solid #e67e22;
+    margin-right: 2%;
+    border-radius: 23px;
+    transition: color 0.2s, border 0.2s;
+}
+a.btn-full:link, a.btn-full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+a.btn-border:link, a.btn-border:visited {
+    color: #e67e22;
+}
+a.btn-full:hover, a.btn-full:focus, a.btn-border:hover, a.btn-border:focus {
+    background-color: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+a.btn-border:hover, a.btn-border:focus {
+    color: #fff;
+}
+/* --------------------------------
+---------- Nav bar -----------------
+-----------------------------------*/
+.logo {
+    height: 100px;
+    width: auto;
+    margin-top: 2%;
+    float: left;
+}
+.main-nav {
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-top: 55px;
+    float: right;
+    font-size: 110%;
+    width: 60%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+}
+.main-nav li {
+    margin-right: 2%;
+}
+/* --------------------------------
+---------- Features Section -------
+-----------------------------------*/
+.features-section {
+    margin-top: 40px;
+}
+.features-section p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #555;
+}
